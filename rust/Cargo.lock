@@ -734,7 +734,7 @@ dependencies = [
  "aws-smithy-types",
  "bytes",
  "fastrand 2.2.0",
- "h2 0.3.24",
+ "h2 0.3.26",
  "http 0.2.11",
  "http-body 0.4.6",
  "http-body 1.0.0",
@@ -1287,9 +1287,9 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.2.1"
+version = "1.2.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd9de9f2205d5ef3fd67e685b0df337994ddd4495e2a28d185500d0e1edfea47"
+checksum = "d487aa071b5f64da6f19a3e848e3578944b726ee5a4854b82172f02aa876bfdc"
 dependencies = [
  "jobserver",
  "libc",
@@ -1599,9 +1599,9 @@ dependencies = [
 
 [[package]]
 name = "crossbeam-channel"
-version = "0.5.11"
+version = "0.5.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "176dc175b78f56c0f321911d9c8eb2b77a78a4860b9c19db83835fea1a46649b"
+checksum = "82b8f8f868b36967f9606790d1903570de9ceaf870a7bf9fbbd3016d636a2cb2"
 dependencies = [
  "crossbeam-utils",
 ]
@@ -2646,9 +2646,9 @@ dependencies = [
 
 [[package]]
 name = "h2"
-version = "0.3.24"
+version = "0.3.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bb2c4422095b67ee78da96fbb51a4cc413b3b25883c7717ff7ca1ab31022c9c9"
+checksum = "81fe527a889e1532da5c525686d96d4c2e74cdd345badf8dfef9f6b39dd5f5e8"
 dependencies = [
  "bytes",
  "fnv",
@@ -3013,14 +3013,14 @@ dependencies = [
  "futures-channel",
  "futures-core",
  "futures-util",
- "h2 0.3.24",
+ "h2 0.3.26",
  "http 0.2.11",
  "http-body 0.4.6",
  "httparse",
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.5.5",
+ "socket2 0.4.10",
  "tokio",
  "tower-service",
  "tracing",
@@ -3785,9 +3785,9 @@ dependencies = [
 
 [[package]]
 name = "mio"
-version = "0.8.10"
+version = "0.8.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f3d0b296e374a4e6f3c7b0a1f5a51d748a0d34c85e7dc48fc3fa9a87657fe09"
+checksum = "a4a650543ca06a924e8b371db273b2756685faae30f8487da1b56505a8f78b0c"
 dependencies = [
  "libc",
  "wasi 0.11.0+wasi-snapshot-preview1",
@@ -4057,9 +4057,9 @@ checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
 
 [[package]]
 name = "openssl"
-version = "0.10.66"
+version = "0.10.73"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9529f4786b70a3e8c61e11179af17ab6188ad8d0ded78c5529441ed39d4bd9c1"
+checksum = "8505734d46c8ab1e19a1dce3aef597ad87dcb4c37e7188231769bd6bd51cebf8"
 dependencies = [
  "bitflags 2.6.0",
  "cfg-if",
@@ -4089,9 +4089,9 @@ checksum = "ff011a302c396a5197692431fc1948019154afc178baf7d8e37367442a4601cf"
 
 [[package]]
 name = "openssl-sys"
-version = "0.9.103"
+version = "0.9.109"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f9e8deee91df40a943c71b917e5874b951d32a802526c85721ce3b776c929d6"
+checksum = "90096e2e47630d78b7d1c20952dc621f957103f8bc2c8359ec81290d75238571"
 dependencies = [
  "cc",
  "libc",
@@ -4235,7 +4235,7 @@ checksum = "4c42a9226546d68acdd9c0a280d17ce19bfe27a46bf68784e4066115788d008e"
 dependencies = [
  "cfg-if",
  "libc",
- "redox_syscall",
+ "redox_syscall 0.4.1",
  "smallvec",
  "windows-targets 0.48.5",
 ]
@@ -4877,6 +4877,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "redox_syscall"
+version = "0.5.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d04b7d0ee6b4a0207a0a7adb104d23ecb0b47d6beae7152d0fa34b692b29fd6"
+dependencies = [
+ "bitflags 2.6.0",
+]
+
+[[package]]
 name = "redox_users"
 version = "0.4.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4963,7 +4972,7 @@ dependencies = [
  "encoding_rs",
  "futures-core",
  "futures-util",
- "h2 0.3.24",
+ "h2 0.3.26",
  "http 0.2.11",
  "http-body 0.4.6",
  "hyper 0.14.28",
@@ -5053,15 +5062,14 @@ dependencies = [
 
 [[package]]
 name = "ring"
-version = "0.17.8"
+version = "0.17.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c17fa4cb658e3583423e915b9f3acc01cceaee1860e33d59ebae66adc3a2dc0d"
+checksum = "a4689e6c2294d81e88dc6261c768b63bc4fcdb852be6d1352498b114f61383b7"
 dependencies = [
  "cc",
  "cfg-if",
  "getrandom 0.2.12",
  "libc",
- "spin",
  "untrusted",
  "windows-sys 0.52.0",
 ]
@@ -5097,9 +5105,9 @@ dependencies = [
 
 [[package]]
 name = "rsa"
-version = "0.9.6"
+version = "0.9.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d0e5124fcb30e76a7e79bfee683a2746db83784b86289f6251b54b7950a0dfc"
+checksum = "78928ac1ed176a5ca1d17e578a1825f3d81ca54cf41053a592584b020cfd691b"
 dependencies = [
  "const-oid",
  "digest",
@@ -5220,9 +5228,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.21.10"
+version = "0.21.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f9d5a6813c0759e4609cd494e8e725babae6a2ca7b62a5536a13daaec6fcb7ba"
+checksum = "3f56a14d1f48b391359b22f731fd4bd7e43c97f3c50eee276f3aa09c94784d3e"
 dependencies = [
  "log",
  "ring",
@@ -6653,7 +6661,7 @@ dependencies = [
  "axum 0.6.20",
  "base64 0.21.7",
  "bytes",
- "h2 0.3.24",
+ "h2 0.3.26",
  "http 0.2.11",
  "http-body 0.4.6",
  "hyper 0.14.28",
@@ -7002,6 +7010,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasite"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b8dad83b4f25e74f184f64c43b150b91efe7647395b42289f38e50566d82855b"
+
+[[package]]
 name = "wasm-bindgen"
 version = "0.2.90"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7132,9 +7146,13 @@ checksum = "5f20c57d8d7db6d3b86154206ae5d8fba62dd39573114de97c2cb0578251f8e1"
 
 [[package]]
 name = "whoami"
-version = "1.4.1"
+version = "1.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22fc3756b8a9133049b26c7f61ab35416c130e8c09b660f5b3958b446f52cc50"
+checksum = "6994d13118ab492c3c80c1f81928718159254c53c472bf9ce36f8dae4add02a7"
+dependencies = [
+ "redox_syscall 0.5.13",
+ "wasite",
+]
 
 [[package]]
 name = "winapi"
@@ -7498,9 +7516,9 @@ dependencies = [
 
 [[package]]
 name = "zip"
-version = "2.2.0"
+version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dc5e4288ea4057ae23afc69a4472434a87a2495cafce6632fd1c4ec9f5cf3494"
+checksum = "84e9a772a54b54236b9b744aaaf8d7be01b4d6e99725523cb82cb32d1c81b1d7"
 dependencies = [
  "arbitrary",
  "crc32fast",
@@ -7509,7 +7527,7 @@ dependencies = [
  "flate2",
  "indexmap 2.7.1",
  "memchr",
- "thiserror 1.0.69",
+ "thiserror 2.0.12",
  "zopfli",
 ]
 
