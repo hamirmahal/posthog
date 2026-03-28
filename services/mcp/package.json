@@ -54,7 +54,7 @@
         "@types/react": "^17.0.39",
         "@types/react-dom": "^18.2.8",
         "@vitejs/plugin-react": "^4.3.4",
-        "ajv": "^8.17.1",
+        "ajv": "^8.18.0",
         "ajv-formats": "^3.0.1",
         "chokidar": "^3.6.0",
         "dotenv": "^16.4.7",
@@ -70,6 +70,6 @@
         "vite-tsconfig-paths": "^5.1.4",
         "vitest": "^3.2.4",
         "wrangler": "^4.59.0",
-        "yaml": "^2.8.2"
+        "yaml": "^2.8.3"
     }
 }
